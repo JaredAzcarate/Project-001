@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Construcción</title>
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header class="contenedor header">
+            <div class="header-logo">
+                <h3>We <span>Build</span></h3>
+            </div>
+
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#blogs">Blogs</a>
+            </nav>
+
+            <div class="header-cta">
+                <div class="header-cta_btn" id="menu-responsive">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="header-cta_btn" id="infobtn">
+                    <i class="fas fa-info"></i>
+                </div>
+
+                <div class="header-cta_btn" id="searchbtn">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="header-cta_btn" id="login-now">
+                    <i class="fas fa-user"></i>
+                </div>
+
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" placeholder="How can we help you?" id="search-box">
+                <label for="search-box" class="search-box_icon"><i class="fas fa-search"></i></label>
+            </form>
+
+            <div class="login-form">
+
+                <h2>Login</h2>
+
+                <form action="" class="login-form_box">
+                    <input type="email" placeholder="Email" class="box">
+                    <input type="password" placeholder="Password" class="box"> 
+                    <div class="login-form_check">
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Remember me</label>
+                        </div>
+                        
+                        <div>
+                            <a href="#">Forgot the Password?</a>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Login now" class="btn">
+                </form>
+
+                <p>Don't have an account <a>create one.</a></p>
+                    
+            </div>
+            
+            <div class="header-info">
+                <i class="fas fa-times" id="header-info_cerrar"></i>
+                <div class="header-info_box">
+                    <i class="fas fa-phone-alt btnIcon"></i>
+                    <h3>Phone Number</h3>
+                    <p>+351 933 273 614</p>
+                    <p>+549 3543 584 228</p>
+                </div>
+
+                <div class="header-info_box">
+                    <i class="fas fa-at"></i>
+                    <h3>Email address</h3>
+                    <p>jaredazcarate@gmail.com</p>
+                    <p>comunicacion@officreativa.com</p>
+                </div>
+
+                <div class="header-info_box">
+                    <i class="fas fa-map-pin"></i>
+                    <h3>Office Address</h3>
+                    <p>Rua Jose Antonio Vieira nº35, Braga, Braga - PT</p>
+                    <p>San Juan 350, Rio Ceballos, Córdoba - AR</p>
+                </div>
+
+                <div class="header-info_social">
+                    <a href=""><i class="fab fa-facebook "></i></a>
+
+                    <a href=""></a><i class="fab fa-instagram "></i></a>
+
+                    <a href=""></a><i class="fab fa-behance "></i></a>
+                </div>
+
+                
+            </div>
+            
+    </header>
+
+    <section class="slides">
+
+        <div class="swiper slides-content">
+
+            <div class="swiper-wrapper">
+
+                <div class="slides-box swiper-slide" style="background: url(build/img/home-slide-1.jpg) no-repeat;">
+                    <div class="slides-box_content">
+                        <h2>Making dream come to life.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ullam, placeat id, porro vero nostrum nulla iusto ipsam tenetur velit delectus repellendus harum eum animi autem quia maxime, repellat officia.</p>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+        
+                <div class="slides-box swiper-slide" style="background: url(build/img/home-slide-2.jpg) ;">
+                    <div class="slides-box_content">
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ullam, placeat id, porro vero nostrum nulla iusto ipsam tenetur velit delectus repellendus harum eum animi autem quia maxime, repellat officia.</p>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+        
+                <div class="slides-box swiper-slide" style="background: url(build/img/home-slide-3.jpg) ;">
+                    <div class="slides-box_content">
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ullam, placeat id, porro vero nostrum nulla iusto ipsam tenetur velit delectus repellendus harum eum animi autem quia maxime, repellat officia.</p>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="about-us contenedor">
+            <h2 class="about-us_title tittle">About us</h2>
+
+            <div class="about-us-content_flex">
+                <div class="about-us-content_video">
+                    <video src="src/video/about-vid.mp4" alt="Presentacion de empresa" autoplay="true" loop="true"></video>
+                </div>
+                
+                <div class="about-us-content_text">
+                    <h3>We Will Provide You The Best Work Which You Dreamt For!</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti beatae aliquid nulla accusantium recusandae.</p>
+                    <a href="#" class="btn"> Read more</a>
+                </div>
+            </div>
+            
+            <div class="about-us-content_grid">                
+                    <div class="about-us-content_number">
+                        <h2>10+</h2>
+                        <p>Years of experience</p>
+                    </div>
+
+                    <div class="about-us-content_number">
+                        <h2>2349+</h2>
+                        <p>Projects completed</p>
+                    </div>
+
+                    <div class="about-us-content_number">
+                        <h2>854</h2>
+                        <p>Satiesfied clients</p>
+                    </div>
+
+                    <div class="about-us-content_number">
+                        <h2>235+</h2>
+                        <p>active workers</p>
+                    </div>
+            </div>
+    </section>
+
+    <section class="services contenedor">
+        <h2 class="services-title tittle">Services</h2>
+        <div class="services-grid">
+            
+            <div class="services-grid_box">
+                <img src="build/img/service-1.png" alt="services">
+                <h4>Building Construction</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-2.png" alt="services">
+                <h4>House Renovation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-3.png" alt="services">
+                <h4>Architechture Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-4.png" alt="services">
+                <h4>Material Supply</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-5.png" alt="services">
+                <h4>Construction Consultant</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-6.png" alt="services">
+                <h4>Interior Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-7.png" alt="services">
+                <h4>Building Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="services-grid_box">
+                <img src="build/img/service-8.png" alt="services">
+                <h4>Building Renovation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scrips -->
+    <script src="https://kit.fontawesome.com/a3bc885f27.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>

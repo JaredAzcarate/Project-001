@@ -1,0 +1,95 @@
+
+@use 'base/variables' as v;
+
+
+@mixin btnIcon() {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: v.$blancoClaro;
+    color:v.$negro;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover{
+        background-color: v.$negro;
+        color: v.$amarillo;
+    }
+}
+
+@mixin titulo {
+        position: relative;
+        left: 2rem;
+        margin-bottom: 4rem;
+       
+    
+        &::before{
+        content: '';
+        position: absolute;
+        left: -2rem;
+        width: 1rem;
+        height: 3rem;
+        background-color: v.$amarillo;
+    }
+}
+
+@mixin flex ($x, $y, $gap){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    gap: $gap;
+}
+
+@mixin flexColumn ($x, $y, $gap) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $x;
+    align-items: $y;
+    gap: $gap;
+}
+
+@mixin grid ($min, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+    gap: $gap;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
+
+@mixin gridColumPersonalizado ($start, $end) {
+    grid-column-start: $start;
+    grid-column-end: $end;
+
+    @media (max-width: 900px) {
+        grid-column-start: 0;
+        grid-column-end: 1;
+    }
+}
+
+@mixin gridRowPersonalizado ($start, $end) {
+    grid-row-start: $start;
+    grid-row-end: $end;
+}
+
+@mixin padding {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@mixin responsive() {
+    @media (max-width: 1200px) {
+        @content
+    }
+}

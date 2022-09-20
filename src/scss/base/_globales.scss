@@ -1,0 +1,73 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: v.$fuentePrincipal;
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 5rem;
+  margin: 1rem auto;
+}
+
+h2{
+  font-size: 4rem;
+  margin: 1rem auto;
+}
+
+h3{
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+
+h4{
+  margin: 0;
+}
+
+p, a {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+}
+
+i{
+  font-size: 1.5rem;
+}
+
+.contenedor{
+  @include m.padding;
+}
+
+.btn{
+  padding: 1rem;
+  width: 100%;
+  background-color:v.$negro;
+  color:v.$blanco;
+  border: none;
+
+  &:hover{
+    background-color: v.$amarillo;
+    color: v.$negro;
+  }
+}
+
+.tittle{
+  @include m.titulo;
+}

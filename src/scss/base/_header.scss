@@ -1,0 +1,240 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    background-color: v.$blanco;
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: v.$sombra;
+    z-index: 2;
+    
+    .header-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 span{
+        font-weight: 700;
+        color: v.$amarillo;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+
+    }
+
+    a{
+        color: v.$negro;
+    }
+
+    a:hover {
+        color: v.$amarillo;
+    }
+
+    .header-cta{
+        display: flex;
+        gap: 1rem;
+        
+        .header-cta_btn{
+            @include m.btnIcon;
+         }
+    }
+
+    #menu-responsive{
+        display: none;
+    }
+
+    .search-form{
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        padding: 1rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: v.$blanco;
+        box-shadow: v.$sombra;
+
+        &.active{
+            display: flex;
+        }
+    }
+
+    #search-box{
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        background-color: v.$blancoClaro;
+    }
+
+    .search-box_icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover{
+            color: v.$amarillo;
+        }
+    }
+
+    .login-form{
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem;
+        background-color: v.$blanco;
+        box-shadow: v.$sombra;
+        display: none;
+        justify-content: center;
+        text-align: center;
+
+        &.active{
+            display: grid;
+        }
+
+        .login-form_box{
+            display: grid;
+            gap: 2rem;
+
+            .box{
+                padding: 1rem;
+                border: none;
+                background-color: v.$blancoClaro;
+            }
+        }
+
+        .login-form_check{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .header-info{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        height: 100%;
+        padding: 5%;
+        z-index: 1100;
+        background-color: v.$blanco;
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.7);
+
+        &.active{
+            display: flex;
+        }
+    
+        .header-info_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            i {
+                @include m.btnIcon   
+            }
+
+            p {
+                margin: 0%;
+            }
+        }
+        
+
+        .header-info_social{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-top: 5rem;
+            border-top: solid 0.1rem v.$negro;
+
+            i {
+                @include m.btnIcon   
+            }
+        }
+
+        #header-info_cerrar{
+            position: absolute;
+            font-size: 2.5rem;
+            top: 10%;
+            right: 20%;
+
+            &:hover{
+                transform: scale(1.3);
+                color: v.$amarillo;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
+
+@include m.responsive {
+    header{
+        grid-template-columns: repeat(2, 1fr);
+
+        #menu-responsive{
+            display: flex;
+         }
+
+         nav{
+            padding: 2rem;
+            position: absolute;
+            display: block;
+            top: 99%;
+            left: 0%;
+            right: 0%;
+            background-color: v.$blanco;
+            border-top: solid 1px darken(v.$blanco, 10%);
+            border-bottom: solid 1px darken(v.$blanco, 10%);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+            }
+
+            a{
+                display: block;
+                padding: 1rem;
+            }
+        }
+    
+        
+    }
+
+    
+
+
+    
+
+    
+}

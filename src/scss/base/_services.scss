@@ -1,0 +1,34 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.services{
+    background-color: v.$blancoClaro;
+
+    .services-grid{
+        @include m.grid(20rem, 3rem);
+    }
+
+    .services-grid_box{
+        padding: 3rem;
+        height: 100%;
+        background-color: v.$blanco;
+        text-align: center;
+        border: solid 0.1rem darken(v.$blanco, 20%);
+        @include m.flexColumn (center, center, 1rem);
+
+        &:hover img{
+            transform: translateY(-1rem);
+        }
+        
+        img{
+            max-width: 6rem;
+            margin-bottom: 1rem;
+            transition: .2s linear;
+        }
+
+        p{
+            color: v.$gris;
+        }
+    }
+
+}
