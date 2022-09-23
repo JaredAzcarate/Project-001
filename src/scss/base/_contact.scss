@@ -1,0 +1,43 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.contact{
+    background-color: v.$negro;
+
+    .tittle{
+        color:v.$blanco;
+    }
+
+    .contact-grid{
+        @include m.grid (20rem, 3rem);
+
+        .contact-map{
+            height: 100%;
+        }
+
+        .contact-form{
+            display: grid;  
+        }
+
+        .form-box{
+            padding: 1rem;
+            width: 100%;
+            margin-bottom: 2rem;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: solid 0.1rem v.$blanco;
+            color: v.$amarillo;
+
+            &:focus{
+                border-color: v.$amarillo;
+            }
+        }
+
+        ::placeholder{
+            color: v.$blancoClaro;
+        }
+
+        
+    }
+}

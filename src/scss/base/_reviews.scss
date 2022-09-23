@@ -1,0 +1,36 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.reviews-slides_box{
+    .slides_box-text{
+        background-color: v.$blancoClaro;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 4rem;
+            width: 2rem;
+            height: 2rem;
+            background: v.$blancoClaro;
+            transform: rotate(45deg)
+        }
+    }
+    .slides_box-client{
+        @include m.flex (left, center, 2rem);
+        height: 10rem;
+
+        & img{
+            height: 100%;
+            
+        }
+    }
+
+    .slides_box-client-stars{
+        color: v.$amarillo;
+    }
+
+}

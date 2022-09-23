@@ -1,0 +1,63 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.projects {
+    background-color: v.$negro;
+
+    .tittle{
+        color: v.$blanco;
+    }
+
+    .projects-grid{
+        @include m.grid (30rem, 3rem);
+
+        .projects-grid_box{
+            display: grid;
+            background-color: v.$blanco;
+
+
+            .projects-box_image{
+                overflow: hidden;
+                height: 40rem;
+            }
+
+            img{
+                width: 100%;
+                transition: .2s ease-in-out;
+                
+            }
+
+            &:hover img{
+                transform: scale(1.1);
+            }
+        }
+
+        .projects-box{
+            display: flex;
+            justify-content: space-between;
+
+            .projects-box_text{
+                padding: 2rem;
+            }
+
+            .projects-box_button{
+                width: 8rem;
+                background-color: v.$amarillo;
+                color: v.$blanco;
+                text-align: center;
+                line-height: 10.5rem;
+
+                i{
+                    font-size: 2rem;
+                    transition: .2s ease-in-out;
+                }
+
+                &:hover i{
+                    transform: scale(1.2);
+                }
+            } 
+        }
+        
+    }
+    
+}

@@ -1,0 +1,40 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+.pricing{
+    background-color: v.$blancoClaro;
+
+    .pricing-grid{
+        @include m.grid(15rem, 2rem);
+
+        
+    
+        .pricing-grid_box{
+            display: grid;
+            text-align: center;
+            gap: 1rem;
+            background: v.$blanco;
+            border: solid 0.1rem darken(v.$blanco, 20%);
+            padding: 3rem;
+            transition: .2s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+    
+            .pricing-grid_box-icon{
+                i{
+                    padding: 2rem;
+                    background-color: v.$amarillo;
+                    border-radius: 1rem;
+                    font-size: 2.5rem;
+                }
+            }
+            
+            & span{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
