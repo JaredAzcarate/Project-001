@@ -1,0 +1,16 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+footer{
+    justify-content: center;
+    text-align: center;
+
+    .footer-btn{
+        @include m.grid (10rem, 1rem);
+    }
+
+    span{
+        font-weight: 800;
+    }
+}
+

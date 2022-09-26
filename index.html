@@ -7,12 +7,13 @@
     <title>Proyecto Construcción</title>
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css />
 </head>
 
 <body>
     <header class="contenedor header">
             <div class="header-logo">
-                <h3>We <span>Build</span></h3>
+                <h3>Soraya <span>Build</span></h3>
             </div>
 
             <nav class="nav">
@@ -22,7 +23,7 @@
                 <a href="#projects">Projects</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
-                <a href="#blogs">Blogs</a>
+                <a href="#blog">Blogs</a>
             </nav>
 
             <div class="header-cta">
@@ -110,7 +111,7 @@
             
     </header>
 
-    <section class="slides">
+    <section class="slides" id="home">
 
         <div class="swiper slides-content">
 
@@ -146,7 +147,7 @@
         </div>
     </section>
 
-    <section class="about-us contenedor">
+    <section class="about-us contenedor" id="about">
             <h2 class="about-us_title tittle">About us</h2>
 
             <div class="about-us-content_flex">
@@ -184,7 +185,7 @@
             </div>
     </section>
 
-    <section class="services contenedor">
+    <section class="services contenedor" id="services">
         <h2 class="services-title tittle">Services</h2>
         <div class="services-grid">
             
@@ -238,99 +239,455 @@
         </div>
     </section>
 
-    <section class="projects contenedor">
+    <section class="projects contenedor" id="projects">
         <h2 class="tittle">Our Projects</h2>
 
-        <a href="build/img/project-1.jpg">
-            <img src="build/img/project-1.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
-                </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
+        <div class="projects-grid">
+            <a href="build/img/project-1.jpg" class="projects-grid_box">
+               
+                <div class="projects-box_image">
+                    <img src="build/img/project-1.jpg" alt="project">
                 </div>
 
-            </div>
-        </a>
-
-        <a href="build/img/project-2.jpg">
-            <img src="build/img/project-2.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
                 </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+    
+            <a href="build/img/project-2.jpg" class="projects-grid_box">
+                
+                <div class="projects-box_image">
+                    <img src="build/img/project-2.jpg" alt="project">
                 </div>
-
-            </div>
-        </a>
-
-        <a href="build/img/project-3.jpg">
-            <img src="build/img/project-3.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
+                
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
                 </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
-                </div>
-
-            </div>
-        </a>
-
-        <a href="build/img/project-4.jpg">
-            <img src="build/img/project-4.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
-                </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+    
+            <a href="build/img/project-3.jpg" class="projects-grid_box">
+                
+                <div class="projects-box_image">
+                    <img src="build/img/project-3.jpg" alt="project">
                 </div>
 
-            </div>
-        </a>
-
-        <a href="build/img/project-5.jpg">
-            <img src="build/img/project-5.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
                 </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
-                </div>
-
-            </div>
-        </a>
-
-        <a href="build/img/project-6.jpg">
-            <img src="build/img/project-6.jpg" alt="project">
-            <div class="projects-box">
-                <div class="projects-box_text">
-                    <h4>Sweet Home</h4>
-                    <p>Construction and desing.</p>
-                </div>
-                <div class="projects-box_button">
-                    <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+    
+            <a href="build/img/project-4.jpg" class="projects-grid_box">
+                
+                <div class="projects-box_image">
+                    <img src="build/img/project-4.jpg" alt="project">
                 </div>
 
-            </div>
-        </a>
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
+                </div>
+            </a>
+    
+            <a href="build/img/project-5.jpg" class="projects-grid_box">
+                
+                <div class="projects-box_image">
+                    <img src="build/img/project-5.jpg" alt="project">
+                </div>
+
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
+                </div>
+            </a>
+    
+            <a href="build/img/project-6.jpg" class="projects-grid_box">
+                <div class="projects-box_image">
+                    <img src="build/img/project-6.jpg" alt="project">
+                </div>
+                <div class="projects-box">
+                    <div class="projects-box_text">
+                        <h4>Sweet Home</h4>
+                        <p>Construction and desing.</p>
+                    </div>
+                    <div class="projects-box_button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+    
+                </div>
+            </a>
+        </div>
         
     </section>
+
+    <section class="reviews  contenedor" id="reviews">
+
+        <h2 class="tittle">Reviews</h2>
+
+        <div class="swiper reviews-content">
+
+            <div class="reviews-slides swiper-wrapper">
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-1.png" alt="client">
+                        <div class="slides_box-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-2.png" alt="client">
+                        <div class="slides_box-client-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-3.png" alt="client">
+                        <div class="slides_box-client-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-4.png" alt="client">
+                        <div class="slides_box-client-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-5.png" alt="client">
+                        <div class="slides_box-client-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-slides_box swiper-slide">
+                    <div class="slides_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint magni molestiae amet dicta aliquid ratione laborum commodi corporis odit, blanditiis veniam optio, iure inventore quos, consequuntur dolorem temporibus? Dolore.</p>
+                    </div>
+                    <div class="slides_box-client">
+                        <img src="build/img/pic-6.png" alt="client">
+                        <div class="slides_box-client-tittle">
+                            <h4>Soraya Lallana</h4>
+                            <div class="slides_box-client-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="pricing contenedor" id="pricing">
+        <h2 class="tittle"> Our Pricing</h2>
+
+        <div class="pricing-grid">
+            
+            <div class="pricing-grid_box">
+                <div class="pricing-grid_box-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h4>Basic Plan</h4>
+                <h2><span>$</span>250<span>/Mo</span></h2>
+                <ul>
+                    <li>interior design</li>
+                    <li>refurbishment</li>
+                    <li>material supply</li>
+                    <li>maintenance</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+
+            <div class="pricing-grid_box">
+                <div class="pricing-grid_box-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h4>Basic Plan</h4>
+                <h2><span>$</span>500<span>/Mo</span></h2>
+                <ul>
+                    <li>interior design</li>
+                    <li>refurbishment</li>
+                    <li>material supply</li>
+                    <li>maintenance</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+
+            <div class="pricing-grid_box">
+                <div class="pricing-grid_box-icon">
+                    <i class="fas fa-hotel"></i>
+                </div>
+                <h4>Basic Plan</h4>
+                <h2><span>$</span>1000<span>/Mo</span></h2>
+                <ul>
+                    <li>interior design</li>
+                    <li>refurbishment</li>
+                    <li>material supply</li>
+                    <li>maintenance</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact contenedor" id="contact">
+
+        <h2 class="tittle">Contact Us</h2>
+
+        <div class="contact-grid">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.373255118614!2d-8.410453548789643!3d41.56116569306481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe9041b03117%3A0xf1a20ba0f96f5ba9!2sR.%20Padre%20Ant%C3%B3nio%20Vieira%2C%204710-412%20Braga!5e0!3m2!1ses-419!2spt!4v1663878669735!5m2!1ses-419!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Name" class="form-box">
+                    <input type="email" placeholder="Email" class="form-box">
+                    <input type="number" placeholder="WhatsApp" class="form-box">
+                    <textarea name="" id="" placeholder="How can we help you?" cols="30" rows="10"  class="form-box"></textarea>
+                    <input type="submit" name="" value="Send Now" id="" class="btn">
+                </form>
+            </div>
+        </div>
+        
+        
+
+    </section>
+
+    <section class="blog contenedor" id="blog">
+        <h2 class="tittle">Our Blog</h2>
+        <div class="swiper blog-slider">
+            <div class="swiper-wrapper">
+
+                    <div class="swiper-slide blog-box">
+
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-1.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide blog-box">
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide blog-box">
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide blog-box">
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-4.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide blog-box">
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-5.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide blog-box">
+                        <div class="blog-box_img">
+                            <img src="build/img/blog-6.jpg" alt="blog">
+                        </div>
+                        <div class="blog-box_content">
+                            <h4>Blog Title Goes Here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aperiam facere inventore, officia aspernatur magnam. Voluptatum architecto dolorem hic! Placeat aliquid pariatur quo blanditiis odio unde, illo iste itaque.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client contenedor">
+        <div class="swiper client-slider" style="text-align: center;">
+            <div class="swiper-wrapper client-slider_content">
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-1.png" alt="cliente" class="client-img">
+                </div>
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-2.png" alt="cliente" class="client-img">
+                </div>
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-3.png" alt="cliente" class="client-img">
+                </div>
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-4.png" alt="cliente" class="client-img">
+                </div>
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-5.png" alt="cliente" class="client-img">
+                </div>
+                <div class="swiper-slide client-box_img">
+                    <img src="build/img/client-logo-6.png" alt="cliente" class="client-img">
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="contenedor">
+        <div class="footer-btn">
+            <a href="#home" class="btn">Home</a>
+            <a href="#about" class="btn">About us</a>
+            <a href="#services" class="btn">Services</a>
+            <a href="#projects" class="btn">Projects</a>
+            <a href="#pricing" class="btn">Pricing</a>
+            <a href="#contact" class="btn">Contact</a>
+            <a href="#blog" class="btn">Blog</a>
+        </div>
+
+        <p>Created By Mr. Web Designer | <span> Desingned by Jared Azcárate.</span></p>
+        
+    </footer>
 
 
     <!-- scrips -->
     <script src="https://kit.fontawesome.com/a3bc885f27.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/scripts.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script>
+          lightGallery(document.querySelector('.projects .projects-grid'));
+    </script>
 </body>
 </html>
